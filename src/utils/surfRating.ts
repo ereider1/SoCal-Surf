@@ -14,88 +14,88 @@ export const SURF_SPOTS: SurfSpot[] = [
     coastlineAngle: 285, // faces South-Southwest
   },
   {
-    id: 'zuma',
-    name: 'Zuma Beach',
-    county: 'Los Angeles',
-    latitude: 34.0220,
-    longitude: -118.8219,
-    description: 'A wide, sandy beach break in northern Malibu known for its heavy shorebreak and fast, punchy waves. It catches a lot of swell but can be closed-out when it gets too big. Great for summer south swells and clean morning conditions.',
-    optimalSwellDirections: ['S', 'SW', 'W', 'WNW'],
+    id: 'c-street',
+    name: 'C-Street (Ventura Point)',
+    county: 'Ventura',
+    latitude: 34.2741,
+    longitude: -119.3025,
+    description: 'A classic, highly popular right-hand cobblestone point break. It offers long, peeling waves that are perfect for all skill levels, with multiple peaks stretching from Ventura Point into the cove.',
+    optimalSwellDirections: ['W', 'WNW', 'NW', 'SW'],
+    optimalWindDirection: 35, // NE winds are offshore
+    offshoreDirectionText: 'NE',
+    coastlineAngle: 305, // faces Southwest
+  },
+  {
+    id: 'mondos',
+    name: 'Mondos Cove',
+    county: 'Ventura',
+    latitude: 34.3128,
+    longitude: -119.4215,
+    description: 'A super mellow, soft beach break located just north of Ventura. Known for its slow, gentle right-hand rollers, Mondos is the ultimate beginner, longboard, and family-friendly spot in the area.',
+    optimalSwellDirections: ['W', 'WNW', 'NW', 'SW'],
+    optimalWindDirection: 20, // N/NE winds are offshore
+    offshoreDirectionText: 'N',
+    coastlineAngle: 290, // faces Southwest
+  },
+  {
+    id: 'silver-strand',
+    name: 'Silver Strand (Oxnard)',
+    county: 'Ventura',
+    latitude: 34.1550,
+    longitude: -119.2225,
+    description: 'A powerful, fast, and heavy sand-bottom beach break that can produce world-class hollow barrels. Breaks best on solid swells and is known for its intense shorebreak and punchy peaks.',
+    optimalSwellDirections: ['SW', 'W', 'WNW', 'NW'],
+    optimalWindDirection: 45, // NE winds are offshore
+    offshoreDirectionText: 'NE',
+    coastlineAngle: 315, // faces Southwest
+  },
+  {
+    id: 'carpinteria-state',
+    name: 'Carpinteria State Beach',
+    county: 'Santa Barbara',
+    latitude: 34.3910,
+    longitude: -119.5210,
+    description: 'A gentle, sandy beach break just minutes north of Rincon. Ideal for longboarding, swimming, and beginner lessons, it offers slow-peeling peaks that break over a soft sand bottom.',
+    optimalSwellDirections: ['W', 'WNW', 'WSW', 'SW'],
+    optimalWindDirection: 15, // N/NNE winds are offshore
+    offshoreDirectionText: 'N',
+    coastlineAngle: 285, // faces South-Southwest
+  },
+  {
+    id: 'leadbetter',
+    name: 'Leadbetter Point',
+    county: 'Santa Barbara',
+    latitude: 34.4015,
+    longitude: -119.6995,
+    description: 'A beautiful, slow, and highly consistent point break located right in Santa Barbara. Great for longboarders and beginners, it needs large West swells to wrap around the Channel Islands and line up.',
+    optimalSwellDirections: ['W', 'WNW', 'Wsw'],
     optimalWindDirection: 350, // N winds are offshore
     offshoreDirectionText: 'N',
-    coastlineAngle: 260, // faces South-Southwest
+    coastlineAngle: 260, // faces South
   },
   {
-    id: 'malibu',
-    name: 'Malibu (Surfrider Beach)',
-    county: 'Los Angeles',
-    latitude: 34.0350,
-    longitude: -118.6787,
-    description: 'The iconic Southern California point break. Malibu is world-famous for its long, peeling right-handers that are perfect for longboarders. It shines on southern swells.',
-    optimalSwellDirections: ['S', 'SW', 'WSW', 'SSE'],
-    optimalWindDirection: 345, // N / NNE winds are offshore
+    id: 'sands',
+    name: 'Sands Beach (Goleta)',
+    county: 'Santa Barbara',
+    latitude: 34.4095,
+    longitude: -119.8785,
+    description: 'A scenic beach and reef break located behind UCSB. Very popular with local students, it features fun left and right peaks that break consistently and handle moderate wind swell well.',
+    optimalSwellDirections: ['W', 'WNW', 'NW'],
+    optimalWindDirection: 10, // N winds are offshore
     offshoreDirectionText: 'N',
-    coastlineAngle: 255, // faces South-Southwest
+    coastlineAngle: 280, // faces South-Southwest
   },
   {
-    id: 'huntington-beach',
-    name: 'Huntington Beach (Pier)',
-    county: 'Orange County',
-    latitude: 33.6558,
-    longitude: -118.0038,
-    description: 'Known as "Surf City USA", HB Pier offers consistent beach break peaks on almost any swell. It handles various swell directions and thrives on South/Southwest swells in the summer and West/Northwest in winter.',
-    optimalSwellDirections: ['S', 'SW', 'W', 'NW', 'WSW'],
-    optimalWindDirection: 45, // NE winds are offshore
-    offshoreDirectionText: 'NE',
-    coastlineAngle: 315, // faces Southwest
-  },
-  {
-    id: 'wedge',
-    name: 'The Wedge',
-    county: 'Orange County',
-    latitude: 33.5931,
-    longitude: -117.8819,
-    description: 'A legendary, highly dramatic bodyboarding and surfing wave. Waves refracting off the Newport Harbor jetty collide with incoming swells to create giant, side-washing wedge peaks that slam directly onto dry sand.',
-    optimalSwellDirections: ['S', 'SSW', 'SW', 'SSE'],
-    optimalWindDirection: 45, // NE winds are offshore
-    offshoreDirectionText: 'NE',
-    coastlineAngle: 315, // faces Southwest
-  },
-  {
-    id: 'trestles',
-    name: 'Lower Trestles',
-    county: 'San Diego',
-    latitude: 33.3828,
-    longitude: -117.5975,
-    description: 'The crown jewel of Southern California surf. A cobblestone A-frame reef break that provides skatepark-like performance waves for both lefts and rights. Thrives on southern hemisphere swells.',
-    optimalSwellDirections: ['S', 'SW', 'WSW', 'W'],
-    optimalWindDirection: 45, // NE/E winds are offshore
-    offshoreDirectionText: 'NE',
-    coastlineAngle: 315, // faces Southwest
-  },
-  {
-    id: 'swamis',
-    name: "Swami's (Encinitas)",
-    county: 'San Diego',
-    latitude: 33.0347,
-    longitude: -117.2925,
-    description: 'A classic, high-quality right-hand point break that wraps around a rocky reef. Named after the Self-Realization Fellowship temple overlooking the cliff, it works best on solid West and Northwest winter swells.',
-    optimalSwellDirections: ['W', 'WNW', 'NW', 'WSW'],
-    optimalWindDirection: 90, // E winds are offshore
+    id: 'jalama',
+    name: 'Jalama Beach',
+    county: 'Santa Barbara',
+    latitude: 34.5125,
+    longitude: -120.5050,
+    description: 'A wild, remote, and highly exposed beach break in northern Santa Barbara County. It catches almost any swell running through the Pacific, offering powerful, heavy peaks, though it can get very windy.',
+    optimalSwellDirections: ['NW', 'WNW', 'W', 'SW'],
+    optimalWindDirection: 75, // E/NE winds are offshore
     offshoreDirectionText: 'E',
-    coastlineAngle: 0, // faces West
-  },
-  {
-    id: 'blacks-beach',
-    name: "Black's Beach",
-    county: 'San Diego',
-    latitude: 32.8886,
-    longitude: -117.2530,
-    description: 'A powerful, heavy beach break magnified by a deep underwater canyon just offshore. It funnels deep ocean swells into giant, hollow peaks. A premier spot for experienced surfers, best on solid NW winter swells.',
-    optimalSwellDirections: ['W', 'WNW', 'NW', 'SW'],
-    optimalWindDirection: 90, // E winds are offshore
-    offshoreDirectionText: 'E',
-    coastlineAngle: 0, // faces West
+    coastlineAngle: 345, // faces West-Southwest
   }
 ];
 
