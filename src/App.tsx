@@ -36,14 +36,35 @@ function App() {
     <div className="app-container">
       {/* Navigation Header */}
       <header className="app-header">
-        <div className="header-logo">
-          <svg className="wave-icon" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M12 18c-3 0-4-3-6-3s-4 3-6 3V2h24v16c-2 0-3-3-6-3s-3 3-6 3z" strokeLinecap="round" strokeLinejoin="round" />
-            <path d="M18 12c-1.5 0-2.5-1.5-4-1.5s-2.5 1.5-4 1.5-2.5-1.5-4-1.5" strokeLinecap="round" />
-          </svg>
-          <div className="logo-text">
-            <h1>SoCal Surf</h1>
-            <span className="logo-badge">Marine Forecast</span>
+        <div className="header-logo-group">
+          {/* Link back to La Conchita Home */}
+          <a href="/" className="back-home-logo-link" title="Back to La Conchita Beach Community Home">
+            <div className="laconchita-logo-pill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="lucide-waves-horizontal">
+                <path d="M2 12q2.5 2 5 0t5 0 5 0 5 0"></path>
+                <path d="M2 19q2.5 2 5 0t5 0 5 0 5 0"></path>
+                <path d="M2 5q2.5 2 5 0t5 0 5 0 5 0"></path>
+              </svg>
+            </div>
+            <div className="laconchita-logo-text">
+              <span className="brand-title">La Conchita</span>
+              <span className="brand-sub">Beach Community</span>
+            </div>
+          </a>
+
+          {/* Vertical Divider */}
+          <div className="logo-divider" />
+
+          {/* SoCal Surf Branding */}
+          <div className="socal-surf-logo-brand">
+            <svg className="wave-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M12 18c-3 0-4-3-6-3s-4 3-6 3V2h24v16c-2 0-3-3-6-3s-3 3-6 3z" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M18 12c-1.5 0-2.5-1.5-4-1.5s-2.5 1.5-4 1.5-2.5-1.5-4-1.5" strokeLinecap="round" />
+            </svg>
+            <div className="socal-logo-text">
+              <h2>SoCal Surf</h2>
+              <span className="socal-logo-badge">Marine Forecast</span>
+            </div>
           </div>
         </div>
         <div className="header-meta">

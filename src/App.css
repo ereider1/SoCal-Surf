@@ -93,30 +93,103 @@ body {
   margin-bottom: 24px;
 }
 
-.header-logo {
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.back-home-logo-link {
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.back-home-logo-link:hover {
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.laconchita-logo-pill {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-sidebar);
+  color: var(--primary-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+  .laconchita-logo-pill {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.laconchita-logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.2px;
+}
+
+.brand-sub {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  margin-top: 1px;
+}
+
+.logo-divider {
+  width: 1px;
+  height: 28px;
+  background-color: var(--border-color);
+}
+
+.socal-surf-logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .wave-icon {
   color: var(--primary-color);
 }
 
-.logo-text h1 {
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  color: var(--text-primary);
-  line-height: 1.1;
+.socal-logo-text {
+  display: flex;
+  flex-direction: column;
 }
 
-.logo-badge {
-  font-size: 11px;
-  font-weight: 600;
+.socal-logo-text h2 {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.3px;
+}
+
+.socal-logo-badge {
+  font-size: 9px;
+  font-weight: 700;
   color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
 }
 
 .header-meta {
